@@ -17,30 +17,34 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 30vw;
     height: 30vh;
-    border: dotted 2px;
+    border: solid 2px;
     padding: 5%;
     background-color: white;
 }
 
 .container__text {
-    font-size: 3rem;
+    font-size: 3.1rem;
+    font-weight: bold;
 }
 
 .container__buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    gap: 5%;
+    height: 3rem;
+    gap: 10%;
 }
 
 .container__button {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
+    width: 3rem;
+    border-radius: 1px;
+    height: 100%;
 }
 
 #button-play-pause.play, #button-play-pause.play i {

@@ -28,13 +28,13 @@ const updateTimer = () => {
 playPauseButton.addEventListener('click', function() {
     if (timerStatus == 'paused') {
         timeInterval = window.setInterval(updateTimer, 1000);
-        document.getElementById('button-play-pause').innerHTML = `<i class='bx bx-pause bx-md' id='button-play-pause'></i>`;
+        document.getElementById('button-play-pause').innerHTML = `<i class='bx bx-pause bx-sm' id='button-play-pause'></i>`;
         playPauseButton.classList.remove('play');
         playPauseButton.classList.add('pause');
         timerStatus = 'on';
     } else {
         window.clearInterval(timeInterval);
-        document.getElementById('button-play-pause').innerHTML = `<i class='bx bx-play bx-md' id='button-play-pause'></i>`;
+        document.getElementById('button-play-pause').innerHTML = `<i class='bx bx-play bx-sm' id='button-play-pause'></i>`;
         playPauseButton.classList.remove('pause');
         playPauseButton.classList.add('play');
         timerStatus = 'paused';
@@ -47,7 +47,7 @@ resetButton.addEventListener('click', function() {
     minutes = 0;
     hours = 0;
     document.getElementById('timer').innerHTML = '00:00:00';
-    document.getElementById('button-play-pause').innerHTML = `<i class='bx bx-play bx-md' id='button-play-pause'></i>`;
+    document.getElementById('button-play-pause').innerHTML = `<i class='bx bx-play bx-sm' id='button-play-pause'></i>`;
     playPauseButton.classList.remove('pause');
     playPauseButton.classList.add('play');
     timer = 'paused';
