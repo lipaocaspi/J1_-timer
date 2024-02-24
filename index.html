@@ -10,14 +10,14 @@
 </head>
 <body>
     <div class = "container">
-        <div class = "container__cronometro">
-            <span class = "container__text">-</span>
-            <div class="container__button">
-                <button class="container__play">
-                    <i class='bx bx-play'></i>
+        <div class = "container__timer">
+            <div class = "container__text container__text--small" id="timer">00:00:00</div>
+            <div class="container__buttons">
+                <button class="container__button play" id="button-play-pause">
+                    <i class='bx bx-play bx-md'></i>
                 </button>
-                <button class="container__reset">
-                    <i class='bx bx-reset'></i>
+                <button class="container__button" id="button-reset">
+                    <i class='bx bx-reset bx-md'></i>
                 </button>
             </div>
         </div>

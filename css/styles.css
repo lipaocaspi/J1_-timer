@@ -1,9 +1,10 @@
 * {
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body{
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     width: 100vw;
@@ -12,20 +13,49 @@ body{
     background-size: cover;
 }
 
-.container__cronometro {
+.container__timer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     width: 30vw;
-    height: 20vh;
+    height: 30vh;
     border: dotted 2px;
     padding: 5%;
     background-color: white;
 }
 
+.container__text {
+    font-size: 3.5rem;
+}
+
+.container__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 .container__button {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#button-play-pause.play, #button-play-pause.play i {
+    background-color: rgb(156, 156, 255);
+}
+
+#button-play-pause.pause, #button-play-pause.pause i {
+    background-color: lightblue;
+}
+
+#button-reset {
+    background-color: lightcoral;
+}
+
+@media (max-width :900px) {
+    .container__text--small {
+        font-size: 2rem;
+    }
 }
