@@ -26,13 +26,14 @@ body{
 }
 
 .container__text {
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .container__buttons {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    gap: 10px;
+    gap: 5%;
 }
 
 .container__button {
@@ -54,8 +55,18 @@ body{
     background-color: lightcoral;
 }
 
-@media (max-width :900px) {
+@media (max-width :768px) {
     .container__text--small {
         font-size: 2rem;
+    }
+    .container__buttons--small {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width :576px) {
+    .container__text--small {
+        font-size: 1.3rem;
     }
 }
